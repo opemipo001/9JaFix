@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <title>About Us</title>
+  </head>
+  <body>
+    <!--NAIGATION BAR-->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="#1EA7FF"
+            class="bi bi-geo-alt-fill text-primary"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+            />
+          </svg>
+          <div class="und">
+            <span class="brand-name"
+              >9Ja<span style="color: #1ea7ff">Fix</span></span
+            >
+            <small class="sub">Get back on the road. Fast</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end container"
+          tabindex="-1"
+          id="offcanvasNavbar"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Mechanic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#featured31">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="About.html"
+                style="border-bottom: solid 0.5px #1ea7ff"
+                >About Us</a
+              >
+            </li>
+            <button class="btns btn1">
+              <a href="logIn.html" style="all: unset">LogIn</a>
+            </button>
+            <button class="btns btn2 bg-primary">SignIn</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--FOR LANDING PAGE----- THE MAIN ABOUT US PAGE-->
+    <div style="background-color: #e8f1fd; padding-bottom: 1rem">
+      <div class="container landing-page">
+        <h1 class="aboutus">About Us</h1>
+        <p class="aboutustext" style="font-weight: 420">
+          9JaFix connects drivers and riders with trusted mechanics near them,
+          in minutes. Whether your car won't start on the expressway, your bike
+          breaks down in traffic, or you have a flat tyre far from home, help
+          shouldn't be hard to find. With 9JaFix, you share your location, see
+          mechanics nearby, and get help from someone who can actually reach
+          you.
+        </p>
+      </div>
+    </div>
+
+    <section class="aboutus-img">
+      <h5 class="aboutus-text2 container">
+        Founded by Bankole, a Final-Year Student in the Department of Computer
+        Science, Kwara State University (KWASU), Malete, Kwara State, Nigeria.
+        We connect people with reliable mechanics quickly, clearly, and fairly,
+        so finding help feels as simple as ordering a ride. Whether you drive a
+        car, ride a bike, or run a workshop, 9JaFix is built to get you where
+        you need to be: back on the road, fast. We help clients get help from
+        nearby mechanics.
+      </h5>
+    </section>
+
+    <!--WHAT WE STAND FOR-->
+    <div
+      style="background-color: #e8f1fd; padding-bottom: 3rem; padding-top: 2rem"
+    >
+      <div class="container landing-page">
+        <h1 class="aboutus">What We Stand For</h1>
+
+        <ul class="aboutustext whatwe">
+          <li>
+            Speed. Request help in a few taps and the mechanic gets in touch
+            with you directly
+          </li>
+          <li>
+            Trust. Real profiles, real reviews, and mechanics checked before
+            they're listed
+          </li>
+          <li>
+            Fair dealing. Clear information about who you're contacting and what
+            they offer
+          </li>
+          <li>
+            Local roots. Built for Nigerian roads, Nigerian drivers, and the
+            mechanics who keep us moving.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--ADD A SLIDING IMAGE TO THIS, IT'S CAROUSELLE OR WHAT IS IT CALLED-->
+
+    <section style="background-color: #e8f1fd">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="9JaFix/Fiximage4.jpg"
+              class="Caroimage d-block w-100"
+              alt="Mechanic Fixing a car"
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="9JaFix/Fiximage5.jpg"
+              class="Caroimage d-block w-100"
+              alt="mechanic fixing a car's steering"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="9JaFix/Fiximage1.jpg"
+              class="Caroimage d-block w-100"
+              alt="Mechanic pouring oil"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--ABOUT ME ................HIIIIIIIIIIIIIIIIIIIIIII, MEET BANKOLE ABDULSALAM OPEMIPO-->
+    <section style="background-color: #e8f1fd">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 myimage-div">
+            <img
+              src="9JaFix/BankoleAbdulsalamOpemipoPassport.jpeg"
+              class="mx-lg-auto img-fluid myimage"
+              alt="BBankole Abdulsalam Image"
+              loading="lazy"
+              style="
+                height: 700px;
+                object-fit: cover;
+                border: solid 1px skyblue;
+              "
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis fs-2 mb-5">
+              Meet Bankole Abdulsalam
+            </h1>
+            <p class="lead chooseP">
+              Bankole Abdulsalam is a Frontend Developer and final-year Computer
+              Science student at Kwara State University (KWASU), Malete,
+              Nigeria. With a growing passion for software development,
+              technology, and digital innovation, he is focused on building
+              practical and intuitive digital solutions that address real-world
+              problems. <br /><br />
+
+              He is the founder of 9JaFix, a platform designed to make finding
+              reliable automotive assistance easier, faster, and more
+              accessible. Recognising the challenges drivers and riders face
+              when their vehicles break down or require maintenance, he set out
+              to create a solution that connects people with nearby mechanics
+              without the usual stress and uncertainty. <br /><br />
+
+              Whether it's a car owner stranded on the roadside, a motorcyclist
+              in need of repairs, or a mechanic looking to connect with more
+              customers, 9JaFix aims to bring both sides together through a
+              simple, accessible, and reliable experience. Through 9JaFix,
+              Bankole combines his knowledge of frontend development, passion
+              for problem-solving, and interest in emerging technologies to
+              build solutions that simplify everyday challenges and create
+              meaningful value for people.
+            </p>
+            <button
+              type="button"
+              class="btn btn-light btn-lg fs-3 mt-3 footer-btn"
+              style="
+                font-weight: bold;
+                border-radius: 100px;
+                padding: 0.5rem 4rem;
+                border: none;
+                color: white;
+                background-color: #0f1f3d;
+              "
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOR FOOTER-->
+    <section class="footer">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="px-4 py-5 my-3 text-center footerM">
+            <h1
+              class="display-5 fw-bold container footerReadyto"
+              style="font-size: 3rem; margin-bottom: 3rem"
+            >
+              Ready to take the next step?
+            </h1>
+            <div class="col-lg-6 mx-auto">
+              <p
+                class="lead readyP"
+                style="margin-bottom: 3rem; font-size: 1rem !important"
+              >
+                Whether it's a flat tyre, a dead battery, or an engine that
+                won't start, we'll help you find the right mechanic with clarity
+                and ease. Get in touch today.
+              </p>
+              <div
+                class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4 footer-btnDiv"
+              >
+                <button
+                  type="button"
+                  class="btn btn-light btn-lg fs-3 footer-btn"
+                  style="
+                    font-weight: bold;
+                    border-radius: 100px;
+                    padding: 0.5rem 4.5rem;
+                    border: none;
+                    color: #0f1f3d;
+                  "
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--THE SECOND FOOTER CONTAINING LINKS, SOCIALS AND LEGALS-->
+
+          <a class="navbar-brand" href="#" style="width: 190px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              fill="#1EA7FF"
+              class="bi bi-geo-alt-fill text-primary"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+              />
+            </svg>
+            <div class="und">
+              <span class="brand-name" style="font-size: 2rem"
+                >9Ja<span style="color: #1ea7ff">Fix</span></span
+              >
+              <small class="sub">Get back on the road. Fast</small>
+            </div>
+          </a>
+
+          <div class="horizontalrule"></div>
+
+          <div class="col-12 col-md">
+            <small
+              class="d-block mb-3 text-body-secondary fs-6"
+              style="color: white !important"
+              >© 2026 9JaFix. All Right Reserved</small
+            >
+          </div>
+
+          <div class="linkincolumn">
+            <div class="col-6 col-md">
+              <h5 class="fs-6">Quick Links</h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Find Mechanic</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="index.html#featured31"
+                    >How it Works</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important; color: #1ea7ff !important"
+                    href="About.html"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="fs-6">Legals</h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Cookies settings</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="fs-6">Socials</h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://www.linkedin.com/in/abdulsalam-bankole-b54973446"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://www.facebook.com/opemipoabdulsalam2"
+                    target="_blank"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://www.instagram.com/abdulsalaam_001?cplk=MTU0cXliaGhoa2R1cw=="
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://x.com/abdulsalaam_2"
+                    target="_blank"
+                    >X</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!--
+WORK ON THE VEHICLE TYPE, SHOULD I STILL NAME IT VEHICLE TYPE OR CHANGE THE NAME ??? SINCE THE SITE WILL BE WORKING GENERALLY ON REPAIRING ANYTHING THAT HAS TO DO WITH MECHANIC ====} STILL ON THIS
+ALSO CHECK FOR THE GOOGLE MAP AND WORK ON THE SIZE, I ALREADY HAVE KEY TO USE IT....... JUST LEFT EIHT        
+-->

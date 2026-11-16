@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>9JaFix</title>
+  </head>
+  <body>
+    <!--NAIGATION BAR-->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container container-fluid">
+        <a class="navbar-brand" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="#1EA7FF"
+            class="bi bi-geo-alt-fill text-primary"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+            />
+          </svg>
+          <div class="und">
+            <span class="brand-name"
+              >9Ja<span style="color: #1ea7ff">Fix</span></span
+            >
+            <small class="sub">Get back on the road. Fast</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end container"
+          tabindex="-1"
+          id="offcanvasNavbar"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="border-bottom: solid 0.5px #1ea7ff"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Mechanic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#featured31">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+            <button class="btns btn1">
+              <a href="logIn.html" style="all: unset">LogIn</a>
+            </button>
+            <button class="btns btn2 bg-primary">SignIn</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--FOR THE LANDING PAGE / HERO-->
+    <section class="hero">
+      <div class="container landing-page">
+        <h1 style="color: rgba(241, 235, 235, 0.75)">
+          Your Car, Bike, or Any Vehicle Breaks Down?
+        </h1>
+        <h1 style="color: #32a2e7">Find The Nearest Mechanic in Seconds.</h1>
+        <p>
+          Get quick, reliable and professional help from trusted mechanic near
+          your location - anytime, anywhere.
+        </p>
+      </div>
+
+      <!--HOW TO FIND NEAREST MECHANIC, STILL WORKING ON THE GOOGLE MAP, I ALREADY KNOW HOW TO IMPORT A MAP, JUST NEED IT TO BE RESPONESIVE----- CHECCK HEREEEEEEEEEEEEEEE -->
+      <div class="container mt-5">
+        <div class="search-container find-mechanic container">
+          <!-- Location Dropdown -->
+          <div class="search-item">
+            <i class="bi bi-geo-alt-fill"></i>
+
+            <div class="search-content">
+              <label for="location">Your Location</label>
+
+              <select id="location">
+                <option value="current">Use current location</option>
+                <option value="manual">Enter location manually</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Vehicle Dropdown -->
+          <div class="search-item">
+            <i class="bi bi-car-front-fill"></i>
+
+            <div class="search-content">
+              <label for="vehicle">Vehicle Type</label>
+
+              <select id="vehicle">
+                <option value="car">Car</option>
+                <option value="motorcycle">Motorcycle</option>
+                <option value="truck">Truck</option>
+                <option value="bus">Bus</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Search Button -->
+          <button class="search-btn" id="findMechanic">
+            <a
+              href="FindingNearest mechanic.html"
+              style="color: white; text-decoration: none"
+            >
+              <i class="bi bi-search"></i>
+              Find Nearest Mechanic
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--HOW IT WORKS............ GET HELP IN 3 SIMPLE EASY WAYS-->
+    <section
+      class="how-it-worksin3ways bg-light"
+      style="background-color: #e8f1fd !important"
+    >
+      <div class="container px-4 py-5" id="featured31">
+        <h2 class="pb-2 text-body-emphasis howit">How It Works</h2>
+        <p class="chooseP">Get help in 3 simple steps.</p>
+        <div class="row g-4 py-4 row-cols-1 row-cols-lg-3 howitworks">
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+            >
+              <i class="bi bi-geo-alt-fill text-primary" width="10rem"></i>
+            </div>
+            <h3 class="fs-3 text-body-emphasis">1. share Your Location</h3>
+            <p class="chooseP">Allow location access to enter manually</p>
+          </div>
+
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+            >
+              <i class="bi bi-search text-primary" width="10rem"></i>
+            </div>
+            <h3 class="fs-3 text-body-emphasis">2. Find Nearby Mechanics</h3>
+            <p class="chooseP">
+              See available and verify mechanic close to you.
+            </p>
+          </div>
+
+          <div class="feature col">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="currentColor"
+                class="bi bi-tools text-primary"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"
+                />
+              </svg>
+            </div>
+            <h3 class="fs-3 text-body-emphasis">3. Get Help</h3>
+            <p class="chooseP">Contact, book or call directly</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVERYTHING ABOUT 9JAFIX INCLUDING AN IMAGE USED AS THE BACKGROUND AND THE TEXT HAS A SLANTING TRANSITION -->
+    <section class="Just9jafix bg-primary text-white py-5">
+      <div>
+        <h1 class="fw-bold text-center">
+          <a href="#">9Ja<span class="text-primary">Fix</span></a>
+        </h1>
+      </div>
+    </section>
+
+    <!--WHY CHOOSE US------ ALSO INCLUDE 3 WHICH ARE IN CARD FORM-->
+    <section class="py-5 bg-light" style="background-color: #e8f1fd !important">
+      <h2 class="pb-5 text-body-emphasis howit container">Why Choose Us?</h2>
+      <div class="container">
+        <div class="row g-4 text-center">
+          <!--CARD FOR SPEED-->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
+              <h5 class="mt-3 fs-3 text-body-emphasis">Speed</h5>
+              <p class="chooseP">
+                Request help in a few taps and the mechanic gets in touch with
+                you directly.
+              </p>
+            </div>
+          </div>
+
+          <!--CARD FOR TRUST-->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
+              <h5 class="mt-3 fs-3 text-body-emphasis">Trust</h5>
+              <p class="chooseP">
+                Real profiles, real reviews, and mechanics checked before
+                they're listed
+              </p>
+            </div>
+          </div>
+
+          <!--CARD FOR FAIR DEALING-->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <i class="bi bi-lightning-charge-fill fs-1 text-primary"></i>
+              <h5 class="mt-3 fs-3 text-body-emphasis">Fair Dealing</h5>
+              <p class="chooseP">
+                Clear information about who you're contacting and what they
+                offer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FREQUENTLY ASKED QUESTION ABOUT US-->
+    <section
+      class="FAQ"
+      style="background-color: #0f1f3d; padding-bottom: 80px"
+    >
+      <div class="accordion container" id="accordionExample">
+        <div>
+          <h1 style="color: white; padding-top: 3rem">
+            Questions About 9JaFix?
+          </h1>
+        </div>
+        <br />
+        <!--FIRST FAQ-->
+        <div
+          class="accordion-item"
+          style="
+            border-right: none;
+            border-left: none;
+            border-bottom: solid rgba(241, 235, 235, 0.75) 0.05px;
+            background-color: #0f1f3d;
+            color: white;
+          "
+        >
+          <h2 class="accordion-header" style="color: white">
+            <button
+              class="accordion-button collapsed chooseP"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+              style="color: white"
+            >
+              What is 9JaFix?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body chooseP">
+              9JaFix is an automotive service platform designed to connect
+              vehicle owners and riders with nearby mechanics. Whether you need
+              help with a vehicle breakdown, routine maintenance, or repairs,
+              9JaFix makes finding the right mechanic easier and more
+              convenient.
+            </div>
+          </div>
+        </div>
+        <!--SECOND FAQ-->
+        <div
+          class="accordion-item"
+          style="
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            border-bottom: solid rgba(241, 235, 235, 0.75) 0.05px;
+            background-color: #0f1f3d;
+            color: white;
+          "
+        >
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed chooseP"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+              style="color: white"
+            >
+              How does 9JaFix work?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body chooseP">
+              9JaFix helps you find mechanics around your location. You can
+              explore available mechanics, identify one that suits your needs,
+              and get in touch to discuss the service you require. Our goal is
+              to make finding automotive assistance simple, convenient, and
+              stress-free.
+            </div>
+          </div>
+        </div>
+        <!--THIRD FAQ-->
+        <div
+          class="accordion-item"
+          style="
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            border-bottom: solid rgba(241, 235, 235, 0.75) 0.05px;
+            background-color: #0f1f3d;
+            color: white;
+          "
+        >
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed chooseP"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+              style="color: white"
+            >
+              Who can use 9JaFix
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body chooseP">
+              9JaFix is designed for both vehicle owners and automotive service
+              providers. Whether you own a car, ride a motorcycle, or operate a
+              mechanic workshop, you can use the platform to connect with the
+              people you need.
+            </div>
+          </div>
+        </div>
+        <!--FOURTH FAQ-->
+        <div
+          class="accordion-item"
+          style="
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            border-bottom: solid rgba(241, 235, 235, 0.75) 0.05px;
+            background-color: #0f1f3d;
+            color: white;
+          "
+        >
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed chooseP"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseFour"
+              style="color: white"
+            >
+              Can I find mechanics for both cars and motorcycles?
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body chooseP">
+              Yes! 9JaFix is designed to serve both car owners and motorcycle
+              riders, helping them connect with mechanics who can assist with
+              their respective vehicle needs.
+            </div>
+          </div>
+        </div>
+        <!--FIFTH FAQ-->
+        <div
+          class="accordion-item"
+          style="
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            border-bottom: solid rgba(241, 235, 235, 0.75) 0.05px;
+            background-color: #0f1f3d;
+            color: white;
+          "
+        >
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed chooseP"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFive"
+              aria-expanded="false"
+              aria-controls="collapseFive"
+              style="color: white"
+            >
+              Can I connect with mechanic directly?
+            </button>
+          </h2>
+          <div
+            id="collapseFive"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body chooseP">
+              Yes. 9JaFix is designed to make connecting with mechanics easier,
+              allowing vehicle owners to get in touch with available mechanics
+              and discuss their repair or maintenance requirements.
+            </div>
+          </div>
+        </div>
+        <!--SIXTH FAQ-->
+        <div
+          class="accordion-item"
+          style="
+            border-right: none;
+            border-left: none;
+            border-top: none;
+            border-bottom: solid rgba(241, 235, 235, 0.75) 0.05px;
+            background-color: #0f1f3d;
+            color: white;
+          "
+        >
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed chooseP"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseSix"
+              aria-expanded="false"
+              aria-controls="collapseSix"
+              style="color: white"
+            >
+              How can I become part of 9JaFix?
+            </button>
+          </h2>
+          <div
+            id="collapseSix"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body chooseP">
+              Mechanics and workshop owners interested in reaching more
+              potential customers can join the 9JaFix platform. The platform is
+              designed to help automotive service providers become more
+              accessible to people searching for their services.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT ME ................HIIIIIIIIIIIIIIIIIIIIIII, MEET BANKOLE ABDULSALAM OPEMIPO-->
+    <section style="background-color: #e8f1fd">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6 myimage-div">
+            <img
+              src="9JaFix/BankoleAbdulsalamOpemipoPassport.jpeg"
+              class="mx-lg-auto img-fluid myimage"
+              alt="Bankole Abdulsalam Image"
+              loading="lazy"
+              style="
+                height: 700px;
+                object-fit: cover;
+                border: solid 1px skyblue;
+              "
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis fs-2 mb-5">
+              Meet Bankole Abdulsalam
+            </h1>
+            <p class="lead chooseP">
+              Bankole Abdulsalam is a Frontend Developer and final-year Computer
+              Science student at Kwara State University (KWASU), Malete,
+              Nigeria. With a growing passion for software development,
+              technology, and digital innovation, he is focused on building
+              practical and intuitive digital solutions that address real-world
+              problems. <br /><br />
+
+              He is the founder of 9JaFix, a platform designed to make finding
+              reliable automotive assistance easier, faster, and more
+              accessible. Recognising the challenges drivers and riders face
+              when their vehicles break down or require maintenance, he set out
+              to create a solution that connects people with nearby mechanics
+              without the usual stress and uncertainty. <br /><br />
+
+              Whether it's a car owner stranded on the roadside, a motorcyclist
+              in need of repairs, or a mechanic looking to connect with more
+              customers, 9JaFix aims to bring both sides together through a
+              simple, accessible, and reliable experience. Through 9JaFix,
+              Bankole combines his knowledge of frontend development, passion
+              for problem-solving, and interest in emerging technologies to
+              build solutions that simplify everyday challenges and create
+              meaningful value for people.
+            </p>
+            <button
+              type="button"
+              class="btn btn-light btn-lg fs-3 mt-5 footer-btn"
+              style="
+                font-weight: bold;
+                border-radius: 100px;
+                padding: 0.5rem 5rem;
+                border: none;
+                color: white;
+                background-color: #0f1f3d;
+              "
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOR FOOTER-->
+    <section class="footer">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="px-4 py-5 my-3 text-center footerM">
+            <h1
+              class="display-5 fw-bold container footerReadyto"
+              style="font-size: 3rem; margin-bottom: 3rem"
+            >
+              Ready to take the next step?
+            </h1>
+            <div class="col-lg-6 mx-auto">
+              <p
+                class="lead readyP"
+                style="margin-bottom: 3rem; font-size: 1rem !important"
+              >
+                Whether it's a flat tyre, a dead battery, or an engine that
+                won't start, we'll help you find the right mechanic with clarity
+                and ease. Get in touch today.
+              </p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button
+                  type="button"
+                  class="btn btn-light btn-lg fs-3 footer-btn"
+                  style="
+                    font-weight: bold;
+                    border-radius: 100px;
+                    padding: 0.5rem 4.5rem;
+                    border: none;
+                    color: #0f1f3d;
+                  "
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--THE SECOND FOOTER CONTAINING LINKS, SOCIALS AND LEGALS-->
+
+          <a class="navbar-brand" href="#" style="width: 190px">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              fill="#1EA7FF"
+              class="bi bi-geo-alt-fill text-primary"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+              />
+            </svg>
+            <div class="und">
+              <span class="brand-name" style="font-size: 2rem"
+                >9Ja<span style="color: #1ea7ff">Fix</span></span
+              >
+              <small class="sub">Get back on the road. Fast</small>
+            </div>
+          </a>
+
+          <div class="horizontalrule"></div>
+
+          <div class="col-12 col-md">
+            <small
+              class="d-block mb-3 text-body-secondary fs-6"
+              style="color: white !important"
+              >© 2026 9JaFix. All Right Reserved</small
+            >
+          </div>
+
+          <div class="linkincolumn">
+            <div class="col-6 col-md">
+              <h5 class="fs-6">Quick Links</h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important; color: #1ea7ff !important"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Find Mechanic</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#featured31"
+                    >How it Works</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="About.html"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="fs-6">Legals</h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="#"
+                    >Cookies settings</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-md">
+              <h5 class="fs-6">Socials</h5>
+              <ul class="list-unstyled text-small">
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://www.linkedin.com/in/abdulsalam-bankole-b54973446"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://www.facebook.com/opemipoabdulsalam2"
+                    target="_blank"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://www.instagram.com/abdulsalaam_001?cplk=MTU0cXliaGhoa2R1cw=="
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="link-secondary text-decoration-none"
+                    style="color: white !important"
+                    href="https://x.com/abdulsalaam_2"
+                    target="_blank"
+                    >X</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

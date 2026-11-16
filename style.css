@@ -1,0 +1,417 @@
+body{
+  scroll-behavior: smooth;
+}
+
+/*GENERAL STYLING, LET ALL PARAGRAAPH TEXT HAS THE SAME FONT SIZE
+SAME THING SHOULD APPLY TO THE HEADING TOO*/
+p{
+  font-size: 1rem !important;
+}
+
+.hero{
+  background: linear-gradient(rgba(11, 20, 38, 0.75), rgba(11, 20, 38, 0.75)), url("9JaFix/Fiximage1.jpg") center / cover no-repeat;  
+  width: 100%;
+  object-fit: fill;
+  padding-bottom: 3rem;
+  aspect-ratio: 16/1;
+}
+
+.container-fluid{
+  display: flex !important;
+  gap: 5rem;
+}
+
+.navbar{
+  background: #0f1f3d;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000;
+}
+
+.navbar-nav{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.navbar-brand{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub{
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: rgba(225, 225, 225, 0.75);
+}
+
+.brand-name{
+  font-size: 1.2rem;
+  font-weight: 700; 
+  color: #e8f1fd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.und{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/*NAV BUTTON*/
+.btns{
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(225, 225, 225, 0.75);
+  text-decoration: none;
+}
+
+.btn1{
+  background-color: transparent;
+  border: solid 0.5px rgba(225, 225, 225, 0.75);
+  padding: 4px 20px;
+}
+
+.btn2{
+  padding: 4px 20px;
+  border: solid 0.5px #0d6efd;
+}
+
+
+/*FOR LANDING PAGE MAIN TEXT*/
+.landing-page{
+  padding-top: 40px;
+}
+
+.landing-page h1{
+  display: block;
+  width: 50%;
+  font-weight: 700;
+}
+
+.landing-page p{
+  display: block;
+  width: 50%;
+  font-weight: 500;
+  color: rgba(241, 235, 235, 0.75);
+  margin-top: 20px;
+}
+
+/*FOR FINDING NEAREST MECHANIC*/
+.find-mechanic{
+  background-color: white !important;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: rgba(241, 235, 235, 0.75);
+  padding: 12px;
+  border-radius: 12px;
+  gap: 15px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  padding: 10px;
+}
+
+.search-item > i {
+  color: #1769ff;
+  font-size: 23px;
+}
+
+.search-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.search-content label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.search-content select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  color: #777;
+  width: 100%;
+  cursor: pointer;
+}
+
+.divider {
+  height: 45px;
+  width: 1px;
+  background: #ddd;
+}
+
+.search-btn {
+  background: #0875f5;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 19px 25px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background: #005ed1;
+}
+
+
+/*HOW IT WORKS SECTION*/
+.howit{
+  font-size: 3.4rem;
+}
+
+.feature-icon{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(225, 225, 225, 0.75);
+}
+
+/*9JA FIX TEXT WITH IMAGE BACKGROUND*/
+.Just9jafix{
+  background: linear-gradient(rgba(11, 20, 38, 0.75), rgba(11, 20, 38, 0.75)), url("9JaFix/Fiximage3.jpg") center / cover no-repeat;  
+  width: 100%;
+  height: 400px;
+  object-fit: scale-down;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Just9jafix h1{
+  font-size: 6rem;
+}
+
+.Just9jafix a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.Just9jafix a:hover{
+  transform:rotate(4deg);
+}
+
+/*WHY CHOOSE US STYLING*/
+.chooseP{
+  font-size: 1.23rem !important;
+}
+
+/*EVERYTHING IN "ABOUT" STYLING*/
+/*COPY THIS FOR MOBILE MEDIA VISIBILITY REDUCE THE HEIGHT OF THE IMAGE TOO*/
+.aboutus{
+  color: #0f1f3d;
+  font-size: 3.5rem !important;
+}
+
+.aboutustext{
+  color: #0f1f3d !important;
+  font-size: 1.5rem !important;
+  width: 80% !important;
+}
+
+.aboutus-img{
+  background: linear-gradient(rgba(11, 20, 38, 0.75), rgba(11, 20, 38, 0.75)), url("9JaFix/Fiximage2.jpg") center / cover no-repeat;  
+  width: 100%;
+  object-fit: fill;
+  aspect-ratio: 16/1;
+  padding-top: 20rem;
+  padding-bottom: 3rem;
+}
+
+/*WHAT WE STAND FOR*/
+.whatwe{
+  margin-top: 2rem;
+  line-height: 3rem !important;
+}
+
+/*FOR FREQUENTLY ASKED QUESTION----- FAQ*/
+.accordion-button{
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+/*FOR FOOTER*/
+.footer{
+  background-color: #0f1f3d;
+  color: white;
+}
+
+.horizontalrule{
+  border-top: solid 0.5px #1ea7ff !important;
+  margin-top: 3rem !important;
+  margin-bottom: 4rem;
+}
+
+.linkincolumn{
+  display: flex;
+}
+
+.Caroimage{
+  aspect-ratio: 16/6;
+  object-fit: cover;
+}
+
+/*FOR THE DESKTOP MEDIA VISIBILITY */
+
+@media (min-width: 992px){
+  .navbar-nav{
+    gap: 35px;
+  }
+}
+
+@media (max-width: 650px) {
+  .search-container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .divider {
+      height: 1px;
+      width: 100%;
+  }
+
+  .search-btn {
+      width: 100%;
+  }
+}
+
+
+/* MEDIA VISIBILITY FOR ALLLLLL*/
+@media (max-width: 480px) {
+
+  /*FOR THE MOBILE NAVBAR, THE DROPDOWN ICON*/
+  button.navbar-toggler{
+    float: right;
+  }
+
+  /*FOR THE ABOUT US PAGE*/
+  .landing-page{
+    padding-top: 40px;
+  }
+  
+  .landing-page h1{
+    display: block;
+    width: 90%;
+    font-weight: 700;
+  }
+  
+  .landing-page p{
+    display: block;
+    width: 90%;
+    font-weight: 500;
+    color: rgba(241, 235, 235, 0.75);
+    margin-top: 20px;
+  }
+
+  /*FOR BUTTONS*/
+  .btn1{
+    margin-top: 3rem;
+  }
+
+  .btn2{
+    margin-top: 1.5rem;
+    border: solid 0.5px #0875f5;
+  }
+  
+.aboutus-text2{
+  color: white;
+  background-color:#253d69;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 10rem;
+  padding: 2rem !important;
+}
+
+/*FOR MY IMAGE IN ABOUT ME*/
+
+.myimage-div{
+  width: 100% !important;
+}
+
+.readyP{
+  margin-top: 2rem;
+  margin-bottom: 1rem !important;
+}
+
+.footerM{
+  padding-top: 0 !important;
+}
+
+.footerReadyto{
+  all: initial;
+  color: white;
+  width: 115% !important;
+  font-size: 1.9rem !important;
+  padding-top: 0 !important;
+}
+
+.aboutus{
+  font-size: 2.4rem !important;
+}
+
+.linkincolumn{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+
+.aboutustext{
+  width: 100% !important;
+}
+
+.aboutus-img{
+  padding-bottom: 0 !important;
+}
+
+.aboutus-text2{
+  line-height: 1.5rem;
+  padding: 1.5rem !important;
+}
+
+.whatwe{
+  margin-top: 1rem;
+  line-height: 2.5rem !important;
+}
+
+.Caroimage{
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  height: 20rem;
+}
+
+
+/*FOR THAT 9JAFIX TEXT THAT IS PENDING ANYTIME YOU HOVER ON IT, THIS IS THE MOBILE VERSION OF IT, I DONT KNOW WHAT IT DOES YET THO*/
+@media (prefers-reduced-motion: reduce) {
+  a.bend { transition: none; }
+  a.bend:hover { transform: none; }
+}
+}
+
+
